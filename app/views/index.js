@@ -1,15 +1,9 @@
 import Renderer, { createElement } from "complate-stream";
+import registerViews from "./manifest";
 
 let renderer = new Renderer("<!DOCTYPE html>");
 
-// This has to register every single view to be used
-import DemoIndex from './demo/index.jsx';
-import DemoStreaming from './demo/streaming.jsx';
-import DemoError from './demo/error.jsx';
-
-renderer.registerView(DemoIndex);
-renderer.registerView(DemoStreaming);
-renderer.registerView(DemoError);
+registerViews(renderer);
 
 export default (stream, view, params, callback) => {
 	let fragment = params && params._fragment === true;
