@@ -3,8 +3,8 @@ import * as views from "./manifest";
 
 let renderer = new Renderer("<!DOCTYPE html>");
 
-Object.values(views).forEach(view => {
-  renderer.registerView(view);
+Object.keys(views).forEach(viewName => {
+	renderer.registerView(views[viewName]);
 });
 
 export default (stream, view, params, callback) => {
