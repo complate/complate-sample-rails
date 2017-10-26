@@ -1,8 +1,4 @@
 // This has to list every single view to be used
-import DemoIndex from './demo/index.jsx';
-import DemoStreaming from './demo/streaming.jsx';
-import DemoError from './demo/error.jsx';
-
-export { DemoIndex };
-export { DemoStreaming };
-export { DemoError };
+export {default as DemoIndex} from './demo/index.jsx';
+export {default as DemoStreaming} from './demo/streaming.jsx';
+export {default as DemoError} from './demo/error.jsx';
