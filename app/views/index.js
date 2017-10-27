@@ -1,9 +1,11 @@
 import Renderer, { createElement } from "complate-stream";
-import registerViews from "./manifest";
+import * as views from "./manifest";
 
 let renderer = new Renderer("<!DOCTYPE html>");
 
-registerViews(renderer);
+Object.keys(views).forEach(viewName => {
+	renderer.registerView(views[viewName]);
+});
 
 export default (stream, view, params, callback) => {
 	let fragment = params && params._fragment === true;

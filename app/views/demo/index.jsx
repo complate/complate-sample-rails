@@ -1,7 +1,7 @@
 import { createElement } from "complate-stream";
 import ApplicationLayout from "../layouts/application.jsx";
 
-export default function DemoIndex({ array }) {
+export function DemoIndex({ array }) {
 	return <ApplicationLayout title="Demo Page">
 		<h1>Complate Rails Demo App</h1>
 
