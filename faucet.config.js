@@ -1,16 +1,11 @@
-let config = {
-	manifest: false,
-	bundles: [{
-		entryPoint: "app/views/index.js",
-		target: "dist/bundle.js",
-		moduleName: "render",
-		transpiler: {
-			features: ["es2015","jsx"],
-			jsx: { pragma: "createElement" }
-		}
-	}]
-};
+"use strict";
 
 module.exports = {
-	js: config
+	js: [{
+		source: "./app/views/index.js",
+		target: "./dist/bundle.js",
+		exports: "render",
+		esnext: true,
+		jsx: { pragma: "createElement" }
+	}]
 };

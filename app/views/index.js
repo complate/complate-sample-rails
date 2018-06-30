@@ -1,7 +1,7 @@
-import Renderer, { createElement } from "complate-stream";
+import Renderer from "complate-stream";
 import * as views from "./manifest";
 
-let renderer = new Renderer("<!DOCTYPE html>");
+let renderer = new Renderer();
 
 Object.keys(views).forEach(viewName => {
 	renderer.registerView(views[viewName]);
