@@ -1,5 +1,7 @@
 class DemoController < ApplicationController
 
+  include ActionController::Live
+
   def index
     @array = ['Some', 'simple', 'array']
   end
