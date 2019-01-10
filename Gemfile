@@ -1,12 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 5.1.4'
-# Use Puma as the app server
-gem 'puma', '~> 3.7'
-
+gem 'rails', '~> 5.2.0'
+gem 'puma'
 gem 'sqlite3'
-
-gem 'complate', :git => 'git@github.com:complate/complate-ruby.git'
+gem 'complate', github: 'complate/complate-ruby'
 
 group :development do
   gem 'listen'

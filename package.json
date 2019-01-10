@@ -2,7 +2,9 @@
   "name": "complate-sample-rails",
   "private": true,
   "dependencies": {
-    "complate-stream": "^0.16.5",
+    "complate-stream": "^0.16.5"
+  },
+  "devDependencies": {
     "faucet-pipeline-jsx": "^1.1.1"
   }
 }
