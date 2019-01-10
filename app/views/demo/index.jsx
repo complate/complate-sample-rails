@@ -1,8 +1,7 @@
 import { createElement } from "complate-stream";
-import ApplicationLayout from "../layouts/application.jsx";
 
-export function DemoIndex({ array }) {
-	return <ApplicationLayout title="Demo Page">
+export default ({array}) => {
+	return <span>
 		<h1>Complate Rails Demo App</h1>
 
 		<h3>Parameter <em>array</em></h3>
@@ -16,5 +15,5 @@ export function DemoIndex({ array }) {
 		<h3>Further Stuff</h3>
 		<a href={rails.streaming_url()}>Streaming</a> (Make sure your server supports this...)
 
-	</ApplicationLayout>;
+	</span>;
 };

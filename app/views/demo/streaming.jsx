@@ -1,7 +1,7 @@
 import { createElement } from "complate-stream";
 import ApplicationLayout from "../layouts/application.jsx";
 
-export function DemoStreaming({ sleep }) {
+export default ({ sleep }) => {
 	return <ApplicationLayout title="Streaming Demo Page">
     <h1>Some Streaming for you</h1>
 		<p>Hope you're using puma...</p>
