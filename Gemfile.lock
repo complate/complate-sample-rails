@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/complate/complate-ruby.git
-  revision: 86b58c3d3523d0bc5fb7116893e0401aa3f67043
+  revision: 77ea7ad6dbad7c7312741f69672af96e40d640c1
   specs:
     complate (0.0.2)
       therubyracer
